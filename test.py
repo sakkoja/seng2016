@@ -12,6 +12,10 @@ class TestSuite(unittest.TestCase):
 
         self.failIf(app.calc(1) != 1)
 
+	self.failIf(app.calc(47) != '47 is a prime')
+
+	self.failIf(app.calc(73) != '73 is a prime')
+
     def test_run(self):
         output = StringIO()
 
